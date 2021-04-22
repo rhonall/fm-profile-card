@@ -1,0 +1,111 @@
+*,
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-primary-dkcyan: hsl(185, 75%, 39%);
+    --clr-primary-vdkblue: hsl(229, 23%, 23%);
+    --clr-primary-dkgblue: hsl(227, 10%, 46%);
+    --clr-neutral-dkgray: hsl(0, 0%, 59%);
+    --clr-white: #fff;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    color: var(--clr-primary-dkgblue);
+    text-align: center;
+    margin: 0;
+    background-color: var(--clr-primary-dkcyan);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 30vh right 55vw, top 51vh left 48vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1, 
+h2 {
+    color: var(--clr-primary-vdkblue);
+    margin-bottom: 0;
+}
+
+.profile-card {    
+    width: 20.5rem;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: auto;
+    position: relative;
+    background-color: var(--clr-white);      
+}
+
+.card-image img {    
+    border: 5px solid var(--clr-white);
+    border-radius: 50%;
+    position: absolute;
+    left: 7rem;
+    top:5.5rem;
+}
+
+.card-profile {
+    margin-top: 4em;
+    position: relative;
+}
+
+.card-profile h1 {
+    font-size: 1.2rem;    
+}
+
+.card-profile span {
+    margin-left: 0.5rem;
+    font-weight: 400;
+    color: var(--clr-primary-dkgblue);
+}
+
+.card-profile p {
+    font-size: 1rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1.3rem;
+}
+
+.card-profile::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    background: var(--clr-neutral-dkgray);
+    opacity: 0.3;
+    left: 0;
+    right: 0;
+}
+
+.card-datas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem 1rem 1.5rem 1rem;
+}
+
+.card-datas h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    
+}
+
+.card-datas p {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    margin-top: 0.4rem;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 0.5rem; 
+}
+
+.attribution a { color: hsl(228, 42%, 42%); }
